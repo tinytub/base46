@@ -2,7 +2,7 @@ local colors = require('base46').get_colors('base_30')
 
 return {
   BufferLineBackground = {
-    fg = colors.grey_fg,
+    fg = colors.grey,
     bg = colors.black2,
   },
   BufferLineBufferSelected = {
@@ -68,11 +68,11 @@ return {
   },
   BufferLineTab = {
     fg = colors.light_grey,
-    bg = colors.one_bg3,
+    bg = colors.black,
   },
   BufferLineTabSelected = {
     fg = colors.black2,
-    bg = colors.nord_blue,
+    bg = colors.black,
   },
   BufferLineTabClose = {
     fg = colors.red,

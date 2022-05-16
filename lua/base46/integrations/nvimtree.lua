@@ -9,7 +9,7 @@ return {
   NvimTreeIndentMarker = { fg = colors.grey_fg },
   NvimTreeNormal = { bg = colors.darker_black },
   NvimTreeNormalNC = { bg = colors.darker_black },
-  NvimTreeOpenedFolderName = { fg = colors.folder_bg },
+  NvimTreeOpenedFolderName = { fg = colors.folder_bg, bold = true },
   NvimTreeGitIgnored = { fg = colors.light_grey },
   NvimTreeWinSeparator = { fg = colors.darker_black, bg = colors.darker_black },
   NvimTreeWindowPicker = { fg = colors.red, bg = colors.black2 },

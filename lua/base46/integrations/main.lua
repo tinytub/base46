@@ -2,7 +2,6 @@ local colors = require('base46').get_colors('base_30')
 
 local black = colors.black
 local blue = colors.blue
-local darker_black = colors.darker_black
 local green = colors.green
 local grey = colors.grey
 local grey_fg = colors.grey_fg
@@ -23,7 +22,8 @@ return {
   LineNr = { fg = grey },
   EndOfBuffer = { fg = black },
   FloatBorder = { fg = line },
-  NormalFloat = { bg = darker_black },
+  NormalFloat = { bg = black },
+  Normal = { bg = black },
   Pmenu = { bg = black },
   PmenuSbar = { bg = one_bg },
   PmenuSel = { bg = pmenu_bg, fg = black },

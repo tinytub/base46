@@ -1,4 +1,5 @@
 local theme = require('base46').get_colors('base_16')
+local colors = require('base46').get_colors('base_30')
 
 return {
   Normal = { fg = theme.base05, bg = theme.base00 },
@@ -40,4 +41,8 @@ return {
   SpellLocal = { undercurl = true, sp = theme.base0C },
   SpellCap = { undercurl = true, sp = theme.base0D },
   SpellRare = { undercurl = true, sp = theme.base0E },
+
+  GitSignsAdd = { fg = colors.green },
+  GitSignsChange = { fg = colors.yellow },
+  GitSignsDelete = { fg = colors.red },
 }
