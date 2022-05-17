@@ -41,8 +41,4 @@ return {
   SpellLocal = { undercurl = true, sp = theme.base0C },
   SpellCap = { undercurl = true, sp = theme.base0D },
   SpellRare = { undercurl = true, sp = theme.base0E },
-
-  GitSignsAdd = { fg = colors.green },
-  GitSignsChange = { fg = colors.yellow },
-  GitSignsDelete = { fg = colors.red },
 }

@@ -22,8 +22,8 @@ local theme = {
     c = { bg = colors.darker_black, fg = colors.white },
   },
   command = {
-    a = { bg = colors.yellow, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.black2, fg = colors.yellow },
+    a = { bg = colors.sun, fg = colors.black, gui = 'bold' },
+    b = { bg = colors.black2, fg = colors.sun },
     c = { bg = colors.darker_black, fg = colors.white },
   },
   inactive = {
