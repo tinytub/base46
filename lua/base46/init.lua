@@ -1,10 +1,10 @@
 local utils = require('base46.utils')
 local M = {}
 
-M.get_colors = function(type)
-  local name = vim.g.base46_config.theme
+M.get_colors = function(type, theme_name)
+  local name = vim.g.base46_config.theme or theme_name or 'tokyonight'
 
-  local path = 'base46.hl_themes.' .. name
+  local path = 'base46.themes.' .. name
 
   local ok, theme = utils.req(path)
 
