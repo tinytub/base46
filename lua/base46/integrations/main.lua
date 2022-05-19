@@ -13,7 +13,7 @@ return {
   PmenuSel = { bg = colors.pmenu_bg, fg = colors.black },
   PmenuThumb = { bg = colors.grey },
   NvimInternalError = { fg = colors.red },
-  WinSeparator = { fg = colors.one_bg2 },
+  WinSeparator = { fg = colors.line },
   AlphaHeader = { fg = colors.grey_fg },
   AlphaButtons = { fg = colors.light_grey },
   DiffAdd = { fg = colors.blue },

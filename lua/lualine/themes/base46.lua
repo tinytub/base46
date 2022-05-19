@@ -3,17 +3,17 @@ local colors = require('base46').get_colors('base_30')
 local theme = {
   normal = {
     a = { bg = colors.blue, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.black2, fg = colors.white },
+    b = { bg = colors.black, fg = colors.white },
     c = { bg = colors.darker_black, fg = colors.white },
   },
   insert = {
     a = { bg = colors.green, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.black2, fg = colors.green },
+    b = { bg = colors.black, fg = colors.green },
     c = { bg = colors.darker_black, fg = colors.white },
   },
   visual = {
     a = { bg = colors.purple, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.black2, fg = colors.purple },
+    b = { bg = colors.black, fg = colors.purple },
     c = { bg = colors.darker_black, fg = colors.white },
   },
   replace = {
@@ -22,8 +22,8 @@ local theme = {
     c = { bg = colors.darker_black, fg = colors.white },
   },
   command = {
-    a = { bg = colors.sun, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.black2, fg = colors.sun },
+    a = { bg = colors.yellow, fg = colors.black, gui = 'bold' },
+    b = { bg = colors.black, fg = colors.yellow },
     c = { bg = colors.darker_black, fg = colors.white },
   },
   inactive = {

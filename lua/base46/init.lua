@@ -1,4 +1,5 @@
 local utils = require('base46.utils')
+
 local M = {}
 
 M.get_colors = function(type, theme_name)
