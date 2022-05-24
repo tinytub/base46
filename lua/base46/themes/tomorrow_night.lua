@@ -53,4 +53,6 @@ M.base_16 = {
   base06 = '#e0e0e0',
 }
 
+M.type = 'dark'
+
 return M

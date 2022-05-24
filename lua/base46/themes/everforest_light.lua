@@ -65,4 +65,6 @@ M.polish_hl = {
   NvimTreeFolderName = { fg = '#4e565c' },
 }
 
+M.type = 'light'
+
 return M
