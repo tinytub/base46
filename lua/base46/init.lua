@@ -19,8 +19,9 @@ end
 M.setup = function(opts)
   vim.g.base46_config = opts
 
-  vim.o.termguicolors = true
-  vim.g.termguicolors = true
+  vim.opt.bg = M.get_colors('type') or 'dark'
+
+  vim.opt.termguicolors = true
 
   require('base46.highlights')
 end
