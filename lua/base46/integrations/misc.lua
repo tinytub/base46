@@ -1,5 +1,4 @@
 local theme = require('base46').get_colors('base_16')
-local colors = require('base46').get_colors('base_30')
 
 return {
   Normal = { fg = theme.base05, bg = theme.base00 },
