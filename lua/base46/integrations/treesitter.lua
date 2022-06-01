@@ -34,4 +34,6 @@ return {
   TSDefinition = { sp = theme.base04, underline = true },
   TSDefinitionUsage = { sp = theme.base04, underline = true },
   TSCurrentScope = { bold = true },
+  luaTSField = { fg = theme.base07 },
+  TSFieldKey = { fg = theme.base08 },
 }

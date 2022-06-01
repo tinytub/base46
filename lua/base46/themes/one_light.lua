@@ -15,7 +15,7 @@ M.base_30 = {
   red = '#d84a3d',
   baby_pink = '#F07178',
   pink = '#ff75a0',
-  line = '#e9e9e9',
+  line = '#e2e2e2',
   green = '#50a14f',
   vibrant_green = '#7eca9c',
   nord_blue = '#428bab',
@@ -36,10 +36,10 @@ M.base_30 = {
 
 M.base_16 = {
   base00 = '#fafafa',
-  base01 = '#f0f0f1',
+  base01 = '#f4f4f4',
   base02 = '#e5e5e6',
-  base03 = '#a0a1a7',
-  base04 = '#696c77',
+  base03 = '#dfdfe0',
+  base04 = '#d7d7d8',
   base05 = '#383a42',
   base06 = '#202227',
   base07 = '#090a0b',
@@ -52,6 +52,8 @@ M.base_16 = {
   base0E = '#a626a4',
   base0F = '#986801',
 }
+
+M.type = 'light'
 
 M.polish_hl = {
   WhichKeyDesc = {
@@ -87,7 +89,5 @@ M.polish_hl = {
     fg = M.base_16.base05,
   },
 }
-
-M.type = 'light'
 
 return M

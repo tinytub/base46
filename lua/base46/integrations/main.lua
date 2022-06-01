@@ -43,6 +43,4 @@ return {
   packerPackageName = { fg = colors.red },
   MatchWord = { fg = colors.orange, bold = true },
   MatchParen = { link = 'MatchWord' },
-  MatchWordCur = {},
-  MatchParenCur = { link = 'MatchWordCur' },
 }
