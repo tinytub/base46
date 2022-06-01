@@ -24,7 +24,11 @@ M.get_colors = function(type, theme_name)
   local ok, theme = utils.req(path)
 
   if ok then
-    return theme[type]
+    if type then
+      return theme[type]
+    else
+      return theme
+    end
   else
     error('Cannot find theme ' .. name)
   end
@@ -39,6 +43,9 @@ M.setup = function(opts)
   vim.opt.bg = M.get_colors('type') or 'dark'
 
   vim.opt.termguicolors = true
+
+  _G.colors = M.get_colors()
+  vim.g.colors = M.get_colors()
 
   require('base46.highlights')
 end
