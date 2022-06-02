@@ -3,20 +3,14 @@
 stds.nvim = {
   globals = {
     'vim',
-    'TERMINAL',
-    'USER',
-    'C',
-    'Config',
-    'WORKSPACE_PATH',
-    'USER_CONFIG_PATH',
+    'base46_config',
+    'colors',
   },
   read_globals = {
     'os',
     'vim',
   },
 }
-
-exclude_files = { 'lua/packer_compiled.lua' }
 
 std = 'lua51+nvim'
 
