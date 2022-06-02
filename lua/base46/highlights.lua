@@ -25,6 +25,10 @@ if polish_hl then
   highlights = utils.merge(highlights, polish_hl)
 end
 
+if base46_config.custom_highlights then
+  highlights = utils.merge(base46_config.custom_highlights, highlights)
+end
+
 require('base46.term_hl')
 
 for hl, col in pairs(highlights) do

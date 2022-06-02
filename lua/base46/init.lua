@@ -17,7 +17,7 @@ M.clear_highlights = function(hl_group)
 end
 
 M.get_colors = function(type, theme_name)
-  local name = vim.g.base46_config.theme or theme_name or 'tokyonight'
+  local name = base46_config.theme or theme_name or 'tokyonight'
 
   local path = 'base46.themes.' .. name
 
@@ -35,7 +35,7 @@ M.get_colors = function(type, theme_name)
 end
 
 M.setup = function(opts)
-  vim.g.base46_config = opts
+  _G.base46_config = opts
 
   M.clear_highlights('BufferLine')
   M.clear_highlights('TS')
@@ -45,7 +45,6 @@ M.setup = function(opts)
   vim.opt.termguicolors = true
 
   _G.colors = M.get_colors()
-  vim.g.colors = M.get_colors()
 
   require('base46.highlights')
 end
