@@ -1,21 +1,5 @@
 local colors = require('base46').get_colors('base_30')
 
-local black = colors.black
-local blue = colors.blue
-local darker_black = colors.darker_black
-local green = colors.green
-local grey = colors.grey
-local grey_fg = colors.grey_fg
-local light_grey = colors.light_grey
-local line = colors.line
-local one_bg = colors.one_bg
-local pmenu_bg = colors.pmenu_bg
-local purple = colors.purple
-local red = colors.red
-local white = colors.white
-local yellow = colors.yellow
-local orange = colors.orange
-
 return {
   Comment = { fg = colors.grey_fg },
   CursorLineNr = { fg = colors.white },
@@ -35,16 +19,6 @@ return {
   LspReferenceText = { fg = colors.darker_black, bg = colors.white },
   LspReferenceRead = { fg = colors.darker_black, bg = colors.white },
   LspReferenceWrite = { fg = colors.darker_black, bg = colors.white },
-  DiffAdd = { fg = colors.blue },
-  DiffAdded = { fg = colors.vibrant_green },
-  DiffChange = { fg = colors.light_grey },
-  DiffChangeDelete = { fg = colors.red },
-  DiffModified = { fg = colors.orange },
-  DiffDelete = { fg = colors.red },
-  DiffRemoved = { fg = colors.red },
-  GitSignsAdd = { link = 'DiffAdded' },
-  GitSignsChange = { link = 'DiffModified' },
-  GitSignsDelete = { link = 'DiffDelete' },
   IndentBlanklineChar = { fg = colors.line },
   IndentBlanklineSpaceChar = { fg = colors.line },
   DiagnosticHint = { fg = colors.purple },
