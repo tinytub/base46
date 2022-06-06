@@ -17,95 +17,48 @@ local yellow = colors.yellow
 local orange = colors.orange
 
 return {
-
-  Comment = { fg = grey_fg },
-
-  -- line numbers
-  CursorLineNr = { fg = white },
-  LineNr = { fg = grey },
-
-  -- those ugly ~'s
-  EndOfBuffer = { fg = black },
-
-  -- floating windows
-  FloatBorder = { fg = blue },
-  NormalFloat = { bg = darker_black },
-
-  -- Pmenu i.e completion menu
-  Pmenu = { bg = black },
-  PmenuSbar = { bg = one_bg },
-  PmenuSel = { bg = pmenu_bg, fg = black },
-  PmenuThumb = { bg = grey },
-
-  NvimInternalError = { fg = red },
-  WinSeparator = { fg = line },
-
-  -- Dashboard i.e alpha.nvim
-  AlphaHeader = { fg = grey_fg },
-  AlphaButtons = { fg = light_grey },
-
-  -- Gitsigns.nvim
-  DiffAdd = {
-    fg = blue,
-  },
-
-  DiffAdded = {
-    fg = green,
-  },
-
-  DiffChange = {
-    fg = light_grey,
-  },
-
-  DiffChangeDelete = {
-    fg = red,
-  },
-
-  DiffModified = {
-    fg = orange,
-  },
-
-  DiffDelete = {
-    fg = red,
-  },
-
-  DiffRemoved = {
-    fg = red,
-  },
-
-  -- Indent blankline
-  IndentBlanklineChar = { fg = line },
-  IndentBlanklineSpaceChar = { fg = line },
-
-  -- Lsp Diagnostics
-  DiagnosticHint = { fg = purple },
-  DiagnosticError = { fg = red },
-  DiagnosticWarn = { fg = yellow },
-  DiagnosticInformation = { fg = green },
-
-  -- whichkey
-  WhichKey = { fg = blue },
-  WhichKeySeparator = { fg = light_grey },
-  WhichKeyDesc = { fg = red },
-  WhichKeyGroup = { fg = green },
-  WhichKeyValue = { fg = green },
-
-  -- packer
-  packerPackageName = { fg = red },
-
-  -- vim-matchup
-  MatchWord = {
-    fg = black,
-    bg = white,
-  },
-  MatchParen = { link = 'MatchWord' },
-
-  MatchWordCur = {},
-  MatchParenCur = { link = 'MatchWordCur' },
-
+  Comment = { fg = colors.grey_fg },
+  CursorLineNr = { fg = colors.white },
+  LineNr = { fg = colors.grey },
+  EndOfBuffer = { fg = colors.black },
+  FloatBorder = { fg = colors.line },
+  NormalFloat = { bg = colors.black },
   Normal = { bg = colors.black },
-
+  Pmenu = { bg = colors.black },
+  PmenuSbar = { bg = colors.one_bg },
+  PmenuSel = { bg = colors.pmenu_bg, fg = colors.black },
+  PmenuThumb = { bg = colors.grey },
+  NvimInternalError = { fg = colors.red },
+  WinSeparator = { fg = colors.line },
+  AlphaHeader = { fg = colors.grey_fg },
+  AlphaButtons = { fg = colors.light_grey },
   LspReferenceText = { fg = colors.darker_black, bg = colors.white },
   LspReferenceRead = { fg = colors.darker_black, bg = colors.white },
   LspReferenceWrite = { fg = colors.darker_black, bg = colors.white },
+  DiffAdd = { fg = colors.blue },
+  DiffAdded = { fg = colors.vibrant_green },
+  DiffChange = { fg = colors.light_grey },
+  DiffChangeDelete = { fg = colors.red },
+  DiffModified = { fg = colors.orange },
+  DiffDelete = { fg = colors.red },
+  DiffRemoved = { fg = colors.red },
+  GitSignsAdd = { link = 'DiffAdded' },
+  GitSignsChange = { link = 'DiffModified' },
+  GitSignsDelete = { link = 'DiffDelete' },
+  IndentBlanklineChar = { fg = colors.line },
+  IndentBlanklineSpaceChar = { fg = colors.line },
+  DiagnosticHint = { fg = colors.purple },
+  DiagnosticError = { fg = colors.red },
+  DiagnosticWarn = { fg = colors.yellow },
+  DiagnosticInformation = { fg = colors.vibrant_green },
+  WhichKey = { fg = colors.blue },
+  WhichKeySeparator = { fg = colors.light_grey },
+  WhichKeyDesc = { fg = colors.red },
+  WhichKeyGroup = { fg = colors.green },
+  WhichKeyValue = { fg = colors.green },
+  packerPackageName = { fg = colors.red },
+  MatchWord = { fg = colors.orange, bold = true },
+  MatchParen = { link = 'MatchWord' },
+  MatchWordCur = {},
+  MatchParenCur = { link = 'MatchWordCur' },
 }
