@@ -5,6 +5,7 @@ local integrations = {
   'cmp',
   'devicons',
   'git',
+  'feline',
   'main',
   'misc',
   'nvimtree',
