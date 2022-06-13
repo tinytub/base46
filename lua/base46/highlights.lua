@@ -13,6 +13,7 @@ local integrations = {
     'telescope',
     'treesitter',
     'gps',
+    'navic',
 }
 
 local highlights = {}
