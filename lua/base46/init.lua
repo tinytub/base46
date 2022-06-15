@@ -90,4 +90,23 @@ function M.get_lualine_theme(base, theme_name)
     return lualine_theme
 end
 
+M.load_highlight = function(group)
+    local default_hl = require("base46.integrations." .. group)
+    --local user_hl = config.ui.hl_override
+
+    --if vim.g.transparency then
+    --   user_hl = M.merge_tb(user_hl, require "base46.glassy")
+    --end
+
+    --for key, value in pairs(user_hl) do
+    --   if default_hl[key] then
+    --      default_hl[key] = value
+    --   end
+    --end
+
+    for hl, col in pairs(default_hl) do
+        vim.api.nvim_set_hl(0, hl, col)
+    end
+end
+
 return M
