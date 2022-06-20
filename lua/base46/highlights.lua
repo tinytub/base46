@@ -12,6 +12,8 @@ local integrations = {
     'syntax',
     'telescope',
     'treesitter',
+    'blankline',
+    'lsp',
     'gps',
     'navic',
 }
