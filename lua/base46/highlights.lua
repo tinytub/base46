@@ -6,7 +6,7 @@ local integrations = {
     'devicons',
     'git',
     'feline',
-    'main',
+    'default',
     'misc',
     'nvimtree',
     'syntax',

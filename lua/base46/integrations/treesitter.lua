@@ -9,6 +9,15 @@ return {
     TSError = { fg = theme.base08, sp = 'none' },
     TSException = { fg = theme.base08, sp = 'none' },
     TSFloat = { fg = theme.base09, sp = 'none' },
+    TSKeywordFunction = {
+        fg = colors.base0E,
+        sp = "none",
+    },
+
+    TSKeywordReturn = {
+        fg = colors.base0E,
+        sp = "none",
+    },
     TSFuncBuiltin = { fg = theme.base0D, sp = 'none' },
     TSFuncMacro = { fg = theme.base09, sp = 'none' },
     TSKeywordOperator = { fg = theme.base0E, sp = 'none' },
@@ -31,6 +40,9 @@ return {
     TSURI = { fg = theme.base09, sp = 'none', underline = true },
     TSTypeBuiltin = { fg = theme.base0A, sp = 'none' },
     TSVariableBuiltin = { fg = theme.base09, sp = 'none' },
+    TSVariable = {
+        fg = colors.base05,
+    },
     TSDefinition = { sp = theme.base04, underline = true },
     TSDefinitionUsage = { sp = theme.base04, underline = true },
     TSCurrentScope = { bold = true },

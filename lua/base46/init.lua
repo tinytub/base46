@@ -2,6 +2,12 @@ local utils = require('base46.utils')
 
 local M = {}
 
+local default_config = {
+    theme = 'tokyonight',
+    custom_highlights = {},
+    load_all_highlights = true,
+}
+
 --  credits to https://github.com/max397574 for this function
 M.clear_highlights = function(hl_group)
     local highlights_raw = vim.split(vim.api.nvim_exec('filter ' .. hl_group .. ' hi', true), '\n')
@@ -35,7 +41,7 @@ M.get_colors = function(type, theme_name)
 end
 
 M.setup = function(opts)
-    _G.base46_config = opts
+    _G.base46_config = utils.merge(default_config, opts or {})
 
     M.clear_highlights('BufferLine')
     M.clear_highlights('TS')
@@ -91,7 +97,10 @@ function M.get_lualine_theme(base, theme_name)
 end
 
 M.load_highlight = function(group)
-    local default_hl = require("base46.integrations." .. group)
+    local ok, default_hl = require("base46.integrations." .. group)
+    if not ok then
+        return
+    end
     --local user_hl = config.ui.hl_override
 
     --if vim.g.transparency then
