@@ -50,6 +50,8 @@ M.setup = function(opts)
 
     vim.opt.termguicolors = true
 
+    require('base46.term_hl')
+
     _G.colors = M.get_colors()
 
     require('base46.highlights')
