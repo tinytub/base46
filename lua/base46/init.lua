@@ -98,10 +98,12 @@ function M.get_lualine_theme(base, theme_name)
     return lualine_theme
 end
 
-M.load_highlight = function(group)
-    local ok, default_hl = require("base46.integrations." .. group)
-    if not ok then
-        return
+M.load_highlight = function(highlight)
+    local ok, highlights
+    if type(highlight) == 'string' then
+        ok, highlights = utils.req('base46.highlights.' .. highlight)
+    elseif type(highlight) == 'table' then
+        highlights = highlight
     end
     --local user_hl = config.ui.hl_override
 
@@ -115,8 +117,10 @@ M.load_highlight = function(group)
     --   end
     --end
 
-    for hl, col in pairs(default_hl) do
-        vim.api.nvim_set_hl(0, hl, col)
+    if ok then
+        for hl, col in pairs(highlights) do
+            vim.api.nvim_set_hl(0, hl, col)
+        end
     end
 end
 
