@@ -31,6 +31,7 @@ if base46_config.load_all_highlights then
     'gps',
     'navic',
     'whichkey',
+    'mason',
   }) do
     local ok, highlight = utils.req('base46.highlights.' .. file)
     if ok then
