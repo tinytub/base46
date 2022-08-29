@@ -2,6 +2,8 @@ local base16 = require('base46').get_colors('base_16')
 local colors = require('base46').get_colors('base_30')
 
 return {
+  CmpDocumentation = { link = 'Pmenu' },
+  CmpPmenu = { link = 'Pmenu' },
   CmpItemAbbr = { fg = colors.white },
   CmpItemAbbrMatch = { fg = colors.blue, bold = true },
   CmpBorder = { fg = colors.grey },
